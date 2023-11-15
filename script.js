@@ -63,7 +63,7 @@ function getRandomNumber() {
 // Konuşulanı aktarma
 recognition.addEventListener('result', onSpeak);
 
-// End SR service
+// Servisi döngüye sokma
 recognition.addEventListener('end', () => recognition.start());
 
 document.body.addEventListener('click', e => {
